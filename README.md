@@ -20,5 +20,5 @@ assert_eq!(chinese_holiday(&date), DayKind::NewYearsDayHoliday);
 ```
 
 For more details, see:
-- [docs.rs](https://docs.rs/chinese_holiday/latest/chinese_holiday/)
+- [docs.rs](https://docs.rs/chinese_holiday/)
 - [examples](examples/)
