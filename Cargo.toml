@@ -1,0 +1,33 @@
+[package]
+name = "chinese_holiday"
+version = "2004.0.1"
+edition = "2021"
+authors = ["leoppro <i@leop.pro>"]
+repository = "https://github.com/leoppro/chinese_holiday_rs"
+license = "Apache-2.0"
+description = """
+A Rust library for determining Chinese holidays.
+"""
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "chinese_holiday"
+
+[features]
+default = ["chrono-compatible"]
+chrono-compatible = ["chrono", "chrono-tz"]
+
+[[example]]
+name = "simple"
+
+[[example]]
+name = "chrono-compatible"
+required-features = ["chrono-compatible"]
+
+[dependencies]
+chrono = { version = "^0.4", default-features = false, optional = true }
+chrono-tz = { version = "^0.8", default-features = false, optional = true }
+
+[dev-dependencies]
+chrono = { version = "^0.4", default-features = false }
+chrono-tz = { version = "^0.8", default-features = false }
