@@ -5,28 +5,30 @@
 /// ## Enum Value Description
 ///
 /// ### Holiday Enum Value
-/// - [`DayKind::NormalHoliday`]：Normal holiday, that is,
+/// - [`DayKind::NormalHoliday`]: Normal holiday, that is,
 /// Saturday and Sunday without makeup workday.
-/// - [`DayKind::NewYearsDayHoliday`]：New Year's Day holiday.
-/// - [`DayKind::SpringFestivalHoliday`]：Spring Festival holiday.
-/// - [`DayKind::ChingMingFestivalHoliday`]：Ching Ming Festival holiday.
-/// - [`DayKind::InternationalWorkersDayHoliday`]：International Workers' Day
+/// - [`DayKind::NewYearsDayHoliday`]: New Year's Day holiday.
+/// - [`DayKind::SpringFestivalHoliday`]: Spring Festival holiday.
+/// - [`DayKind::ChingMingFestivalHoliday`]: Ching Ming Festival holiday.
+/// - [`DayKind::InternationalWorkersDayHoliday`]: International Workers' Day
 /// holiday.
-/// - [`DayKind::DragonBoatFestivalHoliday`]：Dragon Boat Festival holiday.
-/// - [`DayKind::MidAutumnFestivalHoliday`]：Mid-Autumn Festival holiday.
-/// - [`DayKind::NationalDayHoliday`]：National Day holiday.
+/// - [`DayKind::DragonBoatFestivalHoliday`]: Dragon Boat Festival holiday.
+/// - [`DayKind::MidAutumnFestivalHoliday`]: Mid-Autumn Festival holiday.
+/// - [`DayKind::NationalDayHoliday`]: National Day holiday.
+/// - [`DayKind::OtherHoliday`]: Other holiday.
 ///
 /// ### Workday Enum Value
-/// - [`DayKind::NormalWorkday`]：Normal workday, that is, Monday to Friday
+/// - [`DayKind::NormalWorkday`]: Normal workday, that is, Monday to Friday
 /// without statutory holiday.
-/// - [`DayKind::NewYearsDayWorkday`]：New Year's Day makeup workday.
-/// - [`DayKind::SpringFestivalWorkday`]：Spring Festival makeup workday.
-/// - [`DayKind::ChingMingFestivalWorkday`]：Ching Ming Festival makeup workday.
-/// - [`DayKind::InternationalWorkersDayWorkday`]：International Workers' Day
+/// - [`DayKind::NewYearsDayWorkday`]: New Year's Day makeup workday.
+/// - [`DayKind::SpringFestivalWorkday`]: Spring Festival makeup workday.
+/// - [`DayKind::ChingMingFestivalWorkday`]: Ching Ming Festival makeup workday.
+/// - [`DayKind::InternationalWorkersDayWorkday`]: International Workers' Day
 /// makeup workday.
-/// - [`DayKind::DragonBoatFestivalWorkday`]：Dragon Boat Festival makeup workday.
-/// - [`DayKind::MidAutumnFestivalWorkday`]：Mid-Autumn Festival makeup workday.
-/// - [`DayKind::NationalDayWorkday`]：National Day makeup workday.
+/// - [`DayKind::DragonBoatFestivalWorkday`]: Dragon Boat Festival makeup workday.
+/// - [`DayKind::MidAutumnFestivalWorkday`]: Mid-Autumn Festival makeup workday.
+/// - [`DayKind::NationalDayWorkday`]: National Day makeup workday.
+/// - [`DayKind::OtherWorkday`]: Other makeup workday.
 ///
 ///
 /// # 中文版说明
@@ -43,6 +45,7 @@
 /// - [`DayKind::DragonBoatFestivalHoliday`]：端午节假期。
 /// - [`DayKind::MidAutumnFestivalHoliday`]：中秋节假期。
 /// - [`DayKind::NationalDayHoliday`]：国庆节假期。
+/// - [`DayKind::OtherHoliday`]：其他假期。
 ///
 /// ### 工作日类枚举值
 /// - [`DayKind::NormalWorkday`]：普通工作日，即没有调休安排的星期一至星期五。
@@ -53,6 +56,7 @@
 /// - [`DayKind::DragonBoatFestivalWorkday`]：端午节补班。
 /// - [`DayKind::MidAutumnFestivalWorkday`]：中秋节补班。
 /// - [`DayKind::NationalDayWorkday`]：国庆节补班。
+/// - [`DayKind::OtherWorkday`]：其他假期。
 ///
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum DayKind {
@@ -72,6 +76,8 @@ pub enum DayKind {
     MidAutumnFestivalWorkday,
     NationalDayHoliday,
     NationalDayWorkday,
+    OtherHoliday,
+    OtherWorkday,
 }
 
 impl DayKind {
