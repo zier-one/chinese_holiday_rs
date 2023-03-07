@@ -70,8 +70,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2004, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2004, 10, 9), DayKind::NationalDayWorkday),
     (Ymd::new(2004, 10, 10), DayKind::NationalDayWorkday),
-
-
+    //
+    //
     // 2005 年节假日安排
     // 一、元旦：1月1日～3日放假，共3天。其中1月1日为法定假日，将1月1日(星期六)公休日调至1月3日(星期一)，1月2日(星期日)照常公休。
     (Ymd::new(2005, 1, 1), DayKind::NewYearsDayHoliday),
@@ -91,15 +91,42 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2005, 2, 15), DayKind::SpringFestivalHoliday),
     // 三、“五一”：5月1日～7日放假，共7天。其中，1日、2日、3日为法定假日，将4月30日(星期六)、5月1日(星期日)、8日(星期日)三个公休日
     // 调至5月4日(星期三)、5日(星期四)、6日(星期五)，5月7日(星期六)照常公休，4月30日、5月8日上班。
-    (Ymd::new(2005, 4, 30), DayKind::InternationalWorkersDayWorkday),
-    (Ymd::new(2005, 5, 1), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2005, 5, 2), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2005, 5, 3), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2005, 5, 4), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2005, 5, 5), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2005, 5, 6), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2005, 5, 7), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2005, 5, 8), DayKind::InternationalWorkersDayWorkday),
+    (
+        Ymd::new(2005, 4, 30),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    (
+        Ymd::new(2005, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2005, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2005, 5, 3),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2005, 5, 4),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2005, 5, 5),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2005, 5, 6),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2005, 5, 7),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2005, 5, 8),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
     // 四、“十一”：10月1日～7日放假，共7天。其中，1日、2日、3日为法定假日，将10月1日(星期六)、2日(星期日)两个公休日
     // 调至10月4日(星期二)、5日(星期三)，10月8日(星期六)、9日(星期日)两个公休日调至10月6日(星期四)、7日(星期五)，10月8日、9日上班。
     (Ymd::new(2005, 10, 1), DayKind::NationalDayHoliday),
@@ -111,8 +138,6 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2005, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2005, 10, 8), DayKind::NationalDayWorkday),
     (Ymd::new(2005, 10, 9), DayKind::NationalDayWorkday),
-
-
     // 2006 年节假日安排
     // http://www.gov.cn/jrzg/2005-12/22/content_133837.htm
     // 一、元旦：1月1日—3日放假，共3天。
@@ -134,15 +159,42 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2006, 2, 5), DayKind::SpringFestivalWorkday),
     // 三、“五一”：5月1日—7日放假，共7天。
     // 其中，1日、2日、3日为法定假日，将4月29日(星期六)、30日(星期日)两个公休日调至5月4日(星期四)、5日(星期五)，5月6日(星期六)、7日(星期日)照常公休，4月29日、30日上班。
-    (Ymd::new(2006, 4, 29), DayKind::InternationalWorkersDayWorkday),
-    (Ymd::new(2006, 4, 30), DayKind::InternationalWorkersDayWorkday),
-    (Ymd::new(2006, 5, 1), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2006, 5, 2), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2006, 5, 3), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2006, 5, 4), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2006, 5, 5), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2006, 5, 6), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2006, 5, 7), DayKind::InternationalWorkersDayHoliday),
+    (
+        Ymd::new(2006, 4, 29),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    (
+        Ymd::new(2006, 4, 30),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    (
+        Ymd::new(2006, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2006, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2006, 5, 3),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2006, 5, 4),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2006, 5, 5),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2006, 5, 6),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2006, 5, 7),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
     // 四、“十一”：10月1日—7日放假，共7天。
     // 其中，1日、2日、3日为法定假日，将9月30日(星期六)、10月1日(星期日)、8日(星期日)三个公休日调至10月4日(星期三)、5日(星期四)、6日(星期五)，10月7日(星期六)照常公休，9月30日、10月8日上班。
     (Ymd::new(2006, 9, 30), DayKind::NationalDayWorkday),
@@ -154,8 +206,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2006, 10, 6), DayKind::NationalDayHoliday),
     (Ymd::new(2006, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2006, 10, 8), DayKind::NationalDayWorkday),
-
-
+    //
+    //
     // 2007 年节假日安排
     // http://www.gov.cn/fwxx/sh/2006-12/18/content_471877.htm
     // 一、元旦： 1月1日－3日放假，共三天。
@@ -178,15 +230,42 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2007, 2, 25), DayKind::SpringFestivalWorkday),
     // 三、“五一”：5月1日—7日放假，共7天。
     // 其中，1日、2日、3日为法定假日，将4月28日（星期六）、29日（星期日）两个公休日调至5月4日（星期五）、7日（星期一）；5月5日（星期六）、6日（星期日）照常公休，4月28日、29日上班。
-    (Ymd::new(2007, 4, 28), DayKind::InternationalWorkersDayWorkday),
-    (Ymd::new(2007, 4, 29), DayKind::InternationalWorkersDayWorkday),
-    (Ymd::new(2007, 5, 1), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2007, 5, 2), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2007, 5, 3), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2007, 5, 4), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2007, 5, 5), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2007, 5, 6), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2007, 5, 7), DayKind::InternationalWorkersDayHoliday),
+    (
+        Ymd::new(2007, 4, 28),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    (
+        Ymd::new(2007, 4, 29),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    (
+        Ymd::new(2007, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2007, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2007, 5, 3),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2007, 5, 4),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2007, 5, 5),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2007, 5, 6),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2007, 5, 7),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
     // 四、“十一”：10月1日—7日放假，共7天。
     // 其中，1日、2日、3日为法定假日，将9月29日（星期六）、30日（星期日）两个公休日调至10月4日（星期四）、5日（星期五）；10月6日（星期六）、7日（星期日）照常公休，9月29日、30日上班。
     (Ymd::new(2007, 9, 29), DayKind::NationalDayWorkday),
@@ -198,8 +277,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2007, 10, 5), DayKind::NationalDayHoliday),
     (Ymd::new(2007, 10, 6), DayKind::NationalDayHoliday),
     (Ymd::new(2007, 10, 7), DayKind::NationalDayHoliday),
-
-
+    //
+    //
     // 2008 年节假日安排
     // http://www.gov.cn/zwgk/2007-12/18/content_837184.htm
     // 一、元旦：2007年12月30日—2008年1月1日放假，共3天。
@@ -227,10 +306,22 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2008, 4, 6), DayKind::ChingMingFestivalHoliday),
     // 四、“五一”国际劳动节：5月1日—3日放假，共3天。
     // 其中，5月1日为法定节假日，5月3日（星期六）为公休日，5月4日（星期日）公休日调至5月2日（星期五），5月4日（星期日）上班。
-    (Ymd::new(2008, 5, 1), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2008, 5, 2), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2008, 5, 3), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2008, 5, 4), DayKind::InternationalWorkersDayWorkday),
+    (
+        Ymd::new(2008, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2008, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2008, 5, 3),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2008, 5, 4),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
     // 五、端午节：6月7日—9日放假，共3天。
     // 其中，6月7日（星期六）照常公休，6月8日（农历五月初五，端午节）为法定节假日，6月8日（星期日）公休日调至6月9日（星期一）。
     (Ymd::new(2008, 6, 7), DayKind::DragonBoatFestivalHoliday),
@@ -252,8 +343,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2008, 10, 3), DayKind::NationalDayHoliday),
     (Ymd::new(2008, 10, 4), DayKind::NationalDayHoliday),
     (Ymd::new(2008, 10, 5), DayKind::NationalDayHoliday),
-
-
+    //
+    //
     // 2009 年节假日安排
     // http://www.gov.cn/zwgk/2008-12/10/content_1174014.htm
     // 一、元旦：1月1日至3日放假，共3天。
@@ -285,9 +376,18 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2009, 4, 6), DayKind::ChingMingFestivalHoliday),
     // 四、劳动节：5月1日至3日放假，共3天。
     // 其中，5月1日（星期五、“五一”国际劳动节）为法定节假日，5月2日（星期六）、5月3日（星期日）照常公休。
-    (Ymd::new(2009, 5, 1), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2009, 5, 2), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2009, 5, 3), DayKind::InternationalWorkersDayHoliday),
+    (
+        Ymd::new(2009, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2009, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2009, 5, 3),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
     // 五、端午节：5月28日至30日放假，共3天。
     // 其中，5月28日（星期四、农历端午当日）为法定节假日，5月30日（星期六）照常公休；5月31日（星期日）公休日调至5月29日（星期五）。
     // 5月31日（星期日）上班。
@@ -309,8 +409,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2009, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2009, 10, 8), DayKind::NationalDayHoliday),
     (Ymd::new(2009, 10, 10), DayKind::NationalDayWorkday),
-
-
+    //
+    //
     // 2010 年节假日安排
     // http://www.gov.cn/zwgk/2009-12/08/content_1482691.htm
     // 一、元旦：1月1日至3日放假公休，共3天。
@@ -332,9 +432,18 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2010, 4, 4), DayKind::ChingMingFestivalHoliday),
     (Ymd::new(2010, 4, 5), DayKind::ChingMingFestivalHoliday),
     // 四、劳动节：5月1日至3日放假公休，共3天。
-    (Ymd::new(2010, 5, 1), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2010, 5, 2), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2010, 5, 3), DayKind::InternationalWorkersDayHoliday),
+    (
+        Ymd::new(2010, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2010, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2010, 5, 3),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
     // 五、端午节：6月14日至16日放假调休，共3天。6月12日（星期六）、13日（星期日）上班。
     (Ymd::new(2010, 6, 12), DayKind::DragonBoatFestivalWorkday),
     (Ymd::new(2010, 6, 13), DayKind::DragonBoatFestivalWorkday),
@@ -357,8 +466,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2010, 10, 6), DayKind::NationalDayHoliday),
     (Ymd::new(2010, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2010, 10, 9), DayKind::NationalDayWorkday),
-
-
+    //
+    //
     // 2011 年节假日安排
     // http://www.gov.cn/zwgk/2010-12/10/content_1762643.htm
     // 一、元旦：1月1日至3日放假公休，共3天。
@@ -381,9 +490,18 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2011, 4, 4), DayKind::ChingMingFestivalHoliday),
     (Ymd::new(2011, 4, 5), DayKind::ChingMingFestivalHoliday),
     // 四、劳动节：4月30日至5月2日放假公休，共3天。
-    (Ymd::new(2011, 4, 30), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2011, 5, 1), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2011, 5, 2), DayKind::InternationalWorkersDayHoliday),
+    (
+        Ymd::new(2011, 4, 30),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2011, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2011, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
     // 五、端午节：6月4日至6日放假公休，共3天。
     (Ymd::new(2011, 6, 4), DayKind::DragonBoatFestivalHoliday),
     (Ymd::new(2011, 6, 5), DayKind::DragonBoatFestivalHoliday),
@@ -402,8 +520,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2011, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2011, 10, 8), DayKind::NationalDayWorkday),
     (Ymd::new(2011, 10, 9), DayKind::NationalDayWorkday),
-
-
+    //
+    //
     // 2012 年节假日安排
     // http://www.gov.cn/zwgk/2011-12/06/content_2012097.htm
     // 一、元旦：2012年1月1日至3日放假调休，共3天。2011年12月31日（星期六）上班。
@@ -428,10 +546,22 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2012, 4, 3), DayKind::ChingMingFestivalHoliday),
     (Ymd::new(2012, 4, 4), DayKind::ChingMingFestivalHoliday),
     // 四、劳动节：4月29日至5月1日放假调休，共3天。4月28日（星期六）上班。
-    (Ymd::new(2012, 4, 28), DayKind::InternationalWorkersDayWorkday),
-    (Ymd::new(2012, 4, 29), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2012, 4, 30), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2012, 5, 1), DayKind::InternationalWorkersDayHoliday),
+    (
+        Ymd::new(2012, 4, 28),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    (
+        Ymd::new(2012, 4, 29),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2012, 4, 30),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2012, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
     // 五、端午节：6月22日至24日放假公休，共3天。
     (Ymd::new(2012, 6, 22), DayKind::DragonBoatFestivalHoliday),
     (Ymd::new(2012, 6, 23), DayKind::DragonBoatFestivalHoliday),
@@ -446,8 +576,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2012, 10, 5), DayKind::NationalDayHoliday),
     (Ymd::new(2012, 10, 6), DayKind::NationalDayHoliday),
     (Ymd::new(2012, 10, 7), DayKind::NationalDayHoliday),
-
-
+    //
+    //
     // 2013 年节假日安排
     // http://www.gov.cn/zwgk/2012-12/10/content_2286598.htm
     // 一、元旦：1月1日至3日放假调休，共3天。1月5日（星期六）、1月6日（星期日）上班。
@@ -472,11 +602,26 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2013, 4, 6), DayKind::ChingMingFestivalHoliday),
     (Ymd::new(2013, 4, 7), DayKind::ChingMingFestivalWorkday),
     // 四、劳动节：4月29日至5月1日放假调休，共3天。4月27日（星期六）、4月28日（星期日）上班。
-    (Ymd::new(2013, 4, 27), DayKind::InternationalWorkersDayWorkday),
-    (Ymd::new(2013, 4, 28), DayKind::InternationalWorkersDayWorkday),
-    (Ymd::new(2013, 4, 29), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2013, 4, 30), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2013, 5, 1), DayKind::InternationalWorkersDayHoliday),
+    (
+        Ymd::new(2013, 4, 27),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    (
+        Ymd::new(2013, 4, 28),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    (
+        Ymd::new(2013, 4, 29),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2013, 4, 30),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2013, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
     // 五、端午节：6月10日至12日放假调休，共3天。6月8日（星期六）、6月9日（星期日）上班。
     (Ymd::new(2013, 6, 8), DayKind::DragonBoatFestivalWorkday),
     (Ymd::new(2013, 6, 9), DayKind::DragonBoatFestivalWorkday),
@@ -498,8 +643,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2013, 10, 6), DayKind::NationalDayHoliday),
     (Ymd::new(2013, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2013, 10, 12), DayKind::NationalDayWorkday),
-
-
+    //
+    //
     // 2014 年节假日安排
     // http://www.gov.cn/zwgk/2013-12/11/content_2546204.htm
     // 一、元旦：1月1日放假1天。
@@ -519,10 +664,22 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2014, 4, 6), DayKind::ChingMingFestivalHoliday),
     (Ymd::new(2014, 4, 7), DayKind::ChingMingFestivalHoliday),
     // 四、劳动节：5月1日至3日放假调休，共3天。5月4日（星期日）上班。
-    (Ymd::new(2014, 5, 1), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2014, 5, 2), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2014, 5, 3), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2014, 5, 4), DayKind::InternationalWorkersDayWorkday),
+    (
+        Ymd::new(2014, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2014, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2014, 5, 3),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2014, 5, 4),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
     // 五、端午节：6月2日放假，与周末连休。
     (Ymd::new(2014, 5, 31), DayKind::DragonBoatFestivalHoliday),
     (Ymd::new(2014, 6, 1), DayKind::DragonBoatFestivalHoliday),
@@ -541,8 +698,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2014, 10, 6), DayKind::NationalDayHoliday),
     (Ymd::new(2014, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2014, 10, 11), DayKind::NationalDayWorkday),
-
-
+    //
+    //
     // 2015 年节假日安排
     // http://www.gov.cn/zhengce/content/2014-12/16/content_9302.htm
     // http://www.gov.cn/zhengce/content/2015-05/13/content_9742.htm
@@ -566,9 +723,18 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2015, 4, 5), DayKind::ChingMingFestivalHoliday),
     (Ymd::new(2015, 4, 6), DayKind::ChingMingFestivalHoliday),
     // 四、劳动节：5月1日放假，与周末连休。
-    (Ymd::new(2015, 5, 1), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2015, 5, 2), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2015, 5, 3), DayKind::InternationalWorkersDayHoliday),
+    (
+        Ymd::new(2015, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2015, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2015, 5, 3),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
     // 五、端午节：6月20日放假，6月22日（星期一）补休。
     (Ymd::new(2015, 6, 20), DayKind::DragonBoatFestivalHoliday),
     (Ymd::new(2015, 6, 21), DayKind::DragonBoatFestivalHoliday),
@@ -591,8 +757,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2015, 10, 6), DayKind::NationalDayHoliday),
     (Ymd::new(2015, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2015, 10, 10), DayKind::NationalDayWorkday),
-
-
+    //
+    //
     // 2016 年节假日安排
     // http://www.gov.cn/zhengce/content/2015-12/10/content_10394.htm
     // 一、元旦：1月1日放假，与周末连休。
@@ -614,9 +780,18 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2016, 4, 3), DayKind::ChingMingFestivalHoliday),
     (Ymd::new(2016, 4, 4), DayKind::ChingMingFestivalHoliday),
     // 四、劳动节：5月1日放假，5月2日（星期一）补休。
-    (Ymd::new(2016, 4, 30), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2016, 5, 1), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2016, 5, 2), DayKind::InternationalWorkersDayHoliday),
+    (
+        Ymd::new(2016, 4, 30),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2016, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2016, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
     // 五、端午节：6月9日至11日放假调休，共3天。6月12日（星期日）上班。
     (Ymd::new(2016, 6, 9), DayKind::DragonBoatFestivalHoliday),
     (Ymd::new(2016, 6, 10), DayKind::DragonBoatFestivalHoliday),
@@ -636,8 +811,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2016, 10, 6), DayKind::NationalDayHoliday),
     (Ymd::new(2016, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2016, 10, 8), DayKind::NationalDayWorkday),
-
-
+    //
+    //
     // 2017 年节假日安排
     // http://www.gov.cn/zhengce/content/2016-12/01/content_5141603.htm
     // 一、元旦：1月1日放假，1月2日（星期一）补休。
@@ -660,9 +835,18 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2017, 4, 3), DayKind::ChingMingFestivalHoliday),
     (Ymd::new(2017, 4, 4), DayKind::ChingMingFestivalHoliday),
     // 四、劳动节：5月1日放假，与周末连休。
-    (Ymd::new(2017, 4, 29), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2017, 4, 30), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2017, 5, 1), DayKind::InternationalWorkersDayHoliday),
+    (
+        Ymd::new(2017, 4, 29),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2017, 4, 30),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2017, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
     // 五、端午节：5月28日至30日放假调休，共3天。5月27日（星期六）上班。
     (Ymd::new(2017, 5, 27), DayKind::DragonBoatFestivalWorkday),
     (Ymd::new(2017, 5, 28), DayKind::DragonBoatFestivalHoliday),
@@ -678,8 +862,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2017, 10, 6), DayKind::NationalDayHoliday),
     (Ymd::new(2017, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2017, 10, 8), DayKind::NationalDayHoliday),
-
-
+    //
+    //
     // 2018 年节假日安排
     // http://www.gov.cn/zhengce/content/2017-11/30/content_5243579.htm
     // 一、元旦：1月1日放假，与周末连休。
@@ -702,10 +886,22 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2018, 4, 7), DayKind::ChingMingFestivalHoliday),
     (Ymd::new(2018, 4, 8), DayKind::ChingMingFestivalWorkday),
     // 四、劳动节：4月29日至5月1日放假调休，共3天。4月28日（星期六）上班。
-    (Ymd::new(2018, 4, 28), DayKind::InternationalWorkersDayWorkday),
-    (Ymd::new(2018, 4, 29), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2018, 4, 30), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2018, 5, 1), DayKind::InternationalWorkersDayHoliday),
+    (
+        Ymd::new(2018, 4, 28),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    (
+        Ymd::new(2018, 4, 29),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2018, 4, 30),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2018, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
     // 五、端午节：6月18日放假，与周末连休。
     (Ymd::new(2018, 6, 16), DayKind::DragonBoatFestivalHoliday),
     (Ymd::new(2018, 6, 17), DayKind::DragonBoatFestivalHoliday),
@@ -724,8 +920,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2018, 10, 5), DayKind::NationalDayHoliday),
     (Ymd::new(2018, 10, 6), DayKind::NationalDayHoliday),
     (Ymd::new(2018, 10, 7), DayKind::NationalDayHoliday),
-
-
+    //
+    //
     // 2019 年节假日安排
     // http://www.gov.cn/xinwen/2018-12/06/content_5346287.htm
     // http://www.gov.cn/zhengce/content/2019-03/22/content_5375877.htm
@@ -749,12 +945,30 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2019, 4, 6), DayKind::ChingMingFestivalHoliday),
     (Ymd::new(2019, 4, 7), DayKind::ChingMingFestivalHoliday),
     // 四、劳动节：5月1日至4日放假调休，共4天。4月28日（星期日）、5月5日（星期日）上班。
-    (Ymd::new(2019, 4, 28), DayKind::InternationalWorkersDayWorkday),
-    (Ymd::new(2019, 5, 1), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2019, 5, 2), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2019, 5, 3), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2019, 5, 4), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2019, 5, 5), DayKind::InternationalWorkersDayWorkday),
+    (
+        Ymd::new(2019, 4, 28),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    (
+        Ymd::new(2019, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2019, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2019, 5, 3),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2019, 5, 4),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2019, 5, 5),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
     // 五、端午节：6月7日放假，与周末连休。
     (Ymd::new(2019, 6, 7), DayKind::DragonBoatFestivalHoliday),
     (Ymd::new(2019, 6, 8), DayKind::DragonBoatFestivalHoliday),
@@ -773,8 +987,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2019, 10, 6), DayKind::NationalDayHoliday),
     (Ymd::new(2019, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2019, 10, 12), DayKind::NationalDayWorkday),
-    
-
+    //
+    //
     // 2020 年节假日安排
     // http://www.gov.cn/zhengce/content/2019-11/21/content_5454164.htm
     // http://www.gov.cn/zhengce/content/2020-01/27/content_5472352.htm
@@ -797,13 +1011,34 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2020, 4, 5), DayKind::ChingMingFestivalHoliday),
     (Ymd::new(2020, 4, 6), DayKind::ChingMingFestivalHoliday),
     // 四、劳动节：5月1日至5日放假调休，共5天。4月26日（星期日）、5月9日（星期六）上班。
-    (Ymd::new(2020, 4, 26), DayKind::InternationalWorkersDayWorkday),
-    (Ymd::new(2020, 5, 1), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2020, 5, 2), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2020, 5, 3), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2020, 5, 4), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2020, 5, 5), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2020, 5, 9), DayKind::InternationalWorkersDayWorkday),
+    (
+        Ymd::new(2020, 4, 26),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    (
+        Ymd::new(2020, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2020, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2020, 5, 3),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2020, 5, 4),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2020, 5, 5),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2020, 5, 9),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
     // 五、端午节：6月25日至27日放假调休，共3天。6月28日（星期日）上班。
     (Ymd::new(2020, 6, 25), DayKind::DragonBoatFestivalHoliday),
     (Ymd::new(2020, 6, 26), DayKind::DragonBoatFestivalHoliday),
@@ -820,8 +1055,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2020, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2020, 10, 8), DayKind::NationalDayHoliday),
     (Ymd::new(2020, 10, 10), DayKind::NationalDayWorkday),
-
-
+    //
+    //
     // 2021 年节假日安排
     // http://www.gov.cn/zhengce/content/2020-11/25/content_5564127.htm
     // 一、元旦：2021年1月1日至3日放假，共3天。
@@ -843,13 +1078,34 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2021, 4, 4), DayKind::ChingMingFestivalHoliday),
     (Ymd::new(2021, 4, 5), DayKind::ChingMingFestivalHoliday),
     // 四、劳动节：5月1日至5日放假调休，共5天。4月25日（星期日）、5月8日（星期六）上班。
-    (Ymd::new(2021, 4, 25), DayKind::InternationalWorkersDayWorkday),
-    (Ymd::new(2021, 5, 1), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2021, 5, 2), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2021, 5, 3), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2021, 5, 4), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2021, 5, 5), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2021, 5, 8), DayKind::InternationalWorkersDayWorkday),
+    (
+        Ymd::new(2021, 4, 25),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    (
+        Ymd::new(2021, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2021, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2021, 5, 3),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2021, 5, 4),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2021, 5, 5),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2021, 5, 8),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
     // 五、端午节：6月12日至14日放假，共3天。
     (Ymd::new(2021, 6, 12), DayKind::DragonBoatFestivalHoliday),
     (Ymd::new(2021, 6, 13), DayKind::DragonBoatFestivalHoliday),
@@ -869,8 +1125,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2021, 10, 6), DayKind::NationalDayHoliday),
     (Ymd::new(2021, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2021, 10, 9), DayKind::NationalDayWorkday),
-
-
+    //
+    //
     // 2022 年节假日安排
     // http://www.gov.cn/zhengce/content/2021-10/25/content_5644835.htm
     // 一、元旦：2022年1月1日至3日放假，共3天。
@@ -893,13 +1149,34 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2022, 4, 4), DayKind::ChingMingFestivalHoliday),
     (Ymd::new(2022, 4, 5), DayKind::ChingMingFestivalHoliday),
     // 四、劳动节：4月30日至5月4日放假调休，共5天。4月24日（星期日）、5月7日（星期六）上班。
-    (Ymd::new(2022, 4, 24), DayKind::InternationalWorkersDayWorkday),
-    (Ymd::new(2022, 4, 30), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2022, 5, 1), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2022, 5, 2), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2022, 5, 3), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2022, 5, 4), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2022, 5, 7), DayKind::InternationalWorkersDayWorkday),
+    (
+        Ymd::new(2022, 4, 24),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    (
+        Ymd::new(2022, 4, 30),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2022, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2022, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2022, 5, 3),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2022, 5, 4),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2022, 5, 7),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
     // 五、端午节：6月3日至5日放假，共3天。
     (Ymd::new(2022, 6, 3), DayKind::DragonBoatFestivalHoliday),
     (Ymd::new(2022, 6, 4), DayKind::DragonBoatFestivalHoliday),
@@ -918,8 +1195,8 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2022, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2022, 10, 8), DayKind::NationalDayWorkday),
     (Ymd::new(2022, 10, 9), DayKind::NationalDayWorkday),
-
-
+    //
+    //
     // 2023 年节假日安排
     // http://www.gov.cn/zhengce/content/2022-12/08/content_5730844.htm
     // 一、元旦：2022年12月31日至2023年1月2日放假调休，共3天。
@@ -939,13 +1216,34 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     // 三、清明节：4月5日放假，共1天。
     (Ymd::new(2023, 4, 5), DayKind::ChingMingFestivalHoliday),
     // 四、劳动节：4月29日至5月3日放假调休，共5天。4月23日（星期日）、5月6日（星期六）上班。
-    (Ymd::new(2023, 4, 23), DayKind::InternationalWorkersDayWorkday),
-    (Ymd::new(2023, 4, 29), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2023, 4, 30), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2023, 5, 1), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2023, 5, 2), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2023, 5, 3), DayKind::InternationalWorkersDayHoliday),
-    (Ymd::new(2023, 5, 6), DayKind::InternationalWorkersDayWorkday),
+    (
+        Ymd::new(2023, 4, 23),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    (
+        Ymd::new(2023, 4, 29),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2023, 4, 30),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2023, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2023, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2023, 5, 3),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2023, 5, 6),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
     // 五、端午节：6月22日至24日放假调休，共3天。6月25日（星期日）上班。
     (Ymd::new(2023, 6, 22), DayKind::DragonBoatFestivalHoliday),
     (Ymd::new(2023, 6, 23), DayKind::DragonBoatFestivalHoliday),
