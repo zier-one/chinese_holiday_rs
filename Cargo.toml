@@ -1,6 +1,6 @@
 [package]
 name = "chinese_holiday"
-version = "2023.0.1"
+version = "2024.0.1"
 edition = "2021"
 authors = ["leoppro <i@leop.pro>"]
 repository = "https://github.com/leoppro/chinese_holiday_rs"

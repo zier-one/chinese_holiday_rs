@@ -2,7 +2,7 @@ use crate::{DayKind, Ymd};
 
 pub const BASE_YEAR: u16 = 2000;
 
-pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
+pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 722] = [
     // 2004 年节假日安排
     // https://zh.wikisource.org/zh-hans/国务院办公厅关于2004年部分节假日安排的通知
     // 一、元旦：1月1日放假。
@@ -1260,6 +1260,72 @@ pub const SPECIAL_DAY_LIST: [(Ymd, DayKind); 686] = [
     (Ymd::new(2023, 10, 6), DayKind::NationalDayHoliday),
     (Ymd::new(2023, 10, 7), DayKind::NationalDayWorkday),
     (Ymd::new(2023, 10, 8), DayKind::NationalDayWorkday),
+    // 2024 年节假日安排
+    // https://www.gov.cn/zhengce/content/202310/content_6911527.htm
+    // 一、元旦：1月1日放假，与周末连休。
+    (Ymd::new(2024, 1, 1), DayKind::NewYearsDayHoliday),
+    // 二、春节：2月10日至17日放假调休，共8天。2月4日（星期日）、2月18日（星期日）上班。鼓励各单位结合带薪年休假等制度落实，安排职工在除夕（2月9日）休息。
+    (Ymd::new(2024, 2, 4), DayKind::SpringFestivalWorkday),
+    (Ymd::new(2024, 2, 10), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2024, 2, 11), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2024, 2, 12), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2024, 2, 13), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2024, 2, 14), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2024, 2, 15), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2024, 2, 16), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2024, 2, 17), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2024, 2, 18), DayKind::SpringFestivalWorkday),
+    // 三、清明节：4月4日至6日放假调休，共3天。4月7日（星期日）上班。
+    (Ymd::new(2024, 4, 4), DayKind::ChingMingFestivalHoliday),
+    (Ymd::new(2024, 4, 5), DayKind::ChingMingFestivalHoliday),
+    (Ymd::new(2024, 4, 6), DayKind::ChingMingFestivalHoliday),
+    (Ymd::new(2024, 4, 7), DayKind::ChingMingFestivalWorkday),
+    // 四、劳动节：5月1日至5日放假调休，共5天。4月28日（星期日）、5月11日（星期六）上班。
+    (
+        Ymd::new(2024, 4, 28),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    (
+        Ymd::new(2024, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2024, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2024, 5, 3),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2024, 5, 4),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2024, 5, 5),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2024, 5, 11),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    // 五、端午节：6月10日放假，与周末连休。
+    (Ymd::new(2024, 6, 10), DayKind::DragonBoatFestivalHoliday),
+    // 六、中秋节：9月15日至17日放假调休，共3天。9月14日（星期六）上班。
+    (Ymd::new(2024, 9, 14), DayKind::MidAutumnFestivalWorkday),
+    (Ymd::new(2024, 9, 15), DayKind::MidAutumnFestivalHoliday),
+    (Ymd::new(2024, 9, 16), DayKind::MidAutumnFestivalHoliday),
+    (Ymd::new(2024, 9, 17), DayKind::MidAutumnFestivalHoliday),
+    // 七、国庆节：10月1日至7日放假调休，共7天。9月29日（星期日）、10月12日（星期六）上班。
+    (Ymd::new(2024, 9, 29), DayKind::NationalDayWorkday),
+    (Ymd::new(2024, 10, 1), DayKind::NationalDayHoliday),
+    (Ymd::new(2024, 10, 2), DayKind::NationalDayHoliday),
+    (Ymd::new(2024, 10, 3), DayKind::NationalDayHoliday),
+    (Ymd::new(2024, 10, 4), DayKind::NationalDayHoliday),
+    (Ymd::new(2024, 10, 5), DayKind::NationalDayHoliday),
+    (Ymd::new(2024, 10, 6), DayKind::NationalDayHoliday),
+    (Ymd::new(2024, 10, 7), DayKind::NationalDayHoliday),
+    (Ymd::new(2024, 10, 12), DayKind::NationalDayWorkday),
 ];
 
 #[cfg(test)]
