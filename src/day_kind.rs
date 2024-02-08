@@ -56,7 +56,7 @@
 /// - [`DayKind::DragonBoatFestivalWorkday`]：端午节补班。
 /// - [`DayKind::MidAutumnFestivalWorkday`]：中秋节补班。
 /// - [`DayKind::NationalDayWorkday`]：国庆节补班。
-/// - [`DayKind::OtherWorkday`]：其他假期。
+/// - [`DayKind::OtherWorkday`]：其他补班。
 ///
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum DayKind {
@@ -95,6 +95,7 @@ impl DayKind {
                 | DayKind::DragonBoatFestivalWorkday
                 | DayKind::MidAutumnFestivalWorkday
                 | DayKind::NationalDayWorkday
+                | DayKind::OtherWorkday
         )
     }
 
@@ -112,6 +113,7 @@ impl DayKind {
                 | DayKind::DragonBoatFestivalHoliday
                 | DayKind::MidAutumnFestivalHoliday
                 | DayKind::NationalDayHoliday
+                | DayKind::OtherHoliday
         )
     }
 }
@@ -133,5 +135,9 @@ mod tests {
         assert_eq!(DayKind::SpringFestivalHoliday.is_holiday(), true);
         assert_eq!(DayKind::SpringFestivalWorkday.is_workday(), true);
         assert_eq!(DayKind::SpringFestivalWorkday.is_holiday(), false);
+        assert_eq!(DayKind::OtherHoliday.is_holiday(), true);
+        assert_eq!(DayKind::OtherHoliday.is_workday(), false);
+        assert_eq!(DayKind::OtherWorkday.is_holiday(), false);
+        assert_eq!(DayKind::OtherWorkday.is_workday(), true);
     }
 }
