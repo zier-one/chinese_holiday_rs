@@ -1,9 +1,9 @@
 [package]
 name = "chinese_holiday"
-version = "2024.0.3"
+version = "2025.1.0"
 edition = "2021"
-authors = ["leoppro <i@leop.pro>"]
-repository = "https://github.com/leoppro/chinese_holiday_rs"
+authors = ["zier-one <i@zier.one>"]
+repository = "https://github.com/zier-one/chinese_holiday_rs/"
 license = "Apache-2.0"
 description = """
 A Rust library for determining Chinese holidays.
