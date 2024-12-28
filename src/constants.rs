@@ -1326,7 +1326,7 @@ pub const SPECIAL_DAY_LIST: &[(Ymd, DayKind)] = &[
     (Ymd::new(2024, 10, 6), DayKind::NationalDayHoliday),
     (Ymd::new(2024, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2024, 10, 12), DayKind::NationalDayWorkday),
-    // 2024 年节假日安排
+    // 2025 年节假日安排
     // https://www.gov.cn/zhengce/content/202411/content_6986382.htm
     // 一、元旦：1月1日（周三）放假1天，不调休。
     (Ymd::new(2025, 1, 1), DayKind::NewYearsDayHoliday),
