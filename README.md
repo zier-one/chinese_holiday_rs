@@ -2,7 +2,7 @@
 
 [English](README.md) | [中文](README_ZH.md)
 
-A Rust library for determining Chinese holidays. Holiday data from the [Chinese Government Information Disclosure Platform](http://www.gov.cn/zhengce/xxgk/index.htm). This library contains special holiday data from 2004 to 2024 and will continue to be updated annually thereafter.
+A Rust library for determining Chinese holidays. Holiday data from the [Chinese Government Information Disclosure Platform](http://www.gov.cn/zhengce/xxgk/index.htm). This library contains special holiday data from 2004 to 2025 and will continue to be updated annually thereafter.
 
 Licensed under [Apache 2.0](LICENSE).
 
