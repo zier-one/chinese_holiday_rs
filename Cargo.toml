@@ -1,6 +1,6 @@
 [package]
 name = "chinese_holiday"
-version = "2025.1.0"
+version = "2025.1.1"
 edition = "2021"
 authors = ["zier-one <i@zier.one>"]
 repository = "https://github.com/zier-one/chinese_holiday_rs/"
