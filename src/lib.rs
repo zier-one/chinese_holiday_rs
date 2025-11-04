@@ -62,8 +62,8 @@ use constants::SPECIAL_DAY_LIST;
 pub fn chinese_holiday<T: Into<Ymd>>(ymd: T) -> DayKind {
     let ymd = ymd.into();
     assert!(
-        ymd >= Ymd::new(2004, 1, 1) && ymd <= Ymd::new(2025, 12, 26),
-        "The library only supports dates from 2004-01-01 to 2025-12-26"
+        ymd >= Ymd::new(2004, 1, 1) && ymd <= Ymd::new(2026, 12, 25),
+        "The library only supports dates from 2004-01-01 to 2026-12-25"
     );
     match SPECIAL_DAY_LIST.binary_search_by_key(&ymd, |(ymd, _)| *ymd) {
         Ok(i) => SPECIAL_DAY_LIST[i].1,
@@ -127,6 +127,7 @@ mod tests {
             (Ymd::new(2024, 10, 6), DayKind::NationalDayHoliday),
             (Ymd::new(2024, 12, 20), DayKind::NormalWorkday),
             (Ymd::new(2025, 10, 11), DayKind::NationalDayWorkday),
+            (Ymd::new(2026, 9, 20), DayKind::NationalDayWorkday),
         ];
         for c in cases {
             assert_eq!(chinese_holiday(c.0), c.1);
