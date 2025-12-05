@@ -1385,6 +1385,73 @@ pub const SPECIAL_DAY_LIST: &[(Ymd, DayKind)] = &[
     (Ymd::new(2025, 10, 7), DayKind::NationalDayHoliday),
     (Ymd::new(2025, 10, 8), DayKind::NationalDayHoliday),
     (Ymd::new(2025, 10, 11), DayKind::NationalDayWorkday),
+    // 2026 年节假日安排
+    // https://www.gov.cn/zhengce/content/202511/content_7047090.htm
+    // 一、元旦：1月1日（周四）至3日（周六）放假调休，共3天。1月4日（周日）上班。
+    (Ymd::new(2026, 1, 1), DayKind::NewYearsDayHoliday),
+    (Ymd::new(2026, 1, 2), DayKind::NewYearsDayHoliday),
+    (Ymd::new(2026, 1, 3), DayKind::NewYearsDayHoliday),
+    (Ymd::new(2026, 1, 4), DayKind::NewYearsDayWorkday),
+    // 二、春节：2月15日（农历腊月二十八、周日）至23日（农历正月初七、周一）放假调休，共9天。2月14日（周六）、2月28日（周六）上班。
+    (Ymd::new(2026, 2, 14), DayKind::SpringFestivalWorkday),
+    (Ymd::new(2026, 2, 15), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2026, 2, 16), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2026, 2, 17), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2026, 2, 18), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2026, 2, 19), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2026, 2, 20), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2026, 2, 21), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2026, 2, 22), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2026, 2, 23), DayKind::SpringFestivalHoliday),
+    (Ymd::new(2026, 2, 28), DayKind::SpringFestivalWorkday),
+    // 三、清明节：4月4日（周六）至6日（周一）放假，共3天。
+    (Ymd::new(2026, 4, 4), DayKind::ChingMingFestivalHoliday),
+    (Ymd::new(2026, 4, 5), DayKind::ChingMingFestivalHoliday),
+    (Ymd::new(2026, 4, 6), DayKind::ChingMingFestivalHoliday),
+    // 四、劳动节：5月1日（周五）至5日（周二）放假调休，共5天。5月9日（周六）上班。
+    (
+        Ymd::new(2026, 5, 1),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2026, 5, 2),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2026, 5, 3),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2026, 5, 4),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2026, 5, 5),
+        DayKind::InternationalWorkersDayHoliday,
+    ),
+    (
+        Ymd::new(2026, 5, 9),
+        DayKind::InternationalWorkersDayWorkday,
+    ),
+    // 五、端午节：6月19日（周五）至21日（周日）放假，共3天。
+    (Ymd::new(2026, 6, 19), DayKind::DragonBoatFestivalHoliday),
+    (Ymd::new(2026, 6, 20), DayKind::DragonBoatFestivalHoliday),
+    (Ymd::new(2026, 6, 21), DayKind::DragonBoatFestivalHoliday),
+    // 国庆节调休（见「七」）
+    (Ymd::new(2026, 9, 20), DayKind::NationalDayWorkday),
+    // 六、中秋节：9月25日（周五）至27日（周日）放假，共3天。
+    (Ymd::new(2026, 9, 25), DayKind::MidAutumnFestivalHoliday),
+    (Ymd::new(2026, 9, 26), DayKind::MidAutumnFestivalHoliday),
+    (Ymd::new(2026, 9, 27), DayKind::MidAutumnFestivalHoliday),
+    // 七、国庆节：10月1日（周四）至7日（周三）放假调休，共7天。9月20日（周日）、10月10日（周六）上班。
+    (Ymd::new(2026, 10, 1), DayKind::NationalDayHoliday),
+    (Ymd::new(2026, 10, 2), DayKind::NationalDayHoliday),
+    (Ymd::new(2026, 10, 3), DayKind::NationalDayHoliday),
+    (Ymd::new(2026, 10, 4), DayKind::NationalDayHoliday),
+    (Ymd::new(2026, 10, 5), DayKind::NationalDayHoliday),
+    (Ymd::new(2026, 10, 6), DayKind::NationalDayHoliday),
+    (Ymd::new(2026, 10, 7), DayKind::NationalDayHoliday),
+    (Ymd::new(2026, 10, 10), DayKind::NationalDayWorkday),
 ];
 
 #[cfg(test)]
